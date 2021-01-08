@@ -66,12 +66,14 @@ html
 	margin-top: 2rem !important;
 	border-radius:4px !important;
 	transition: 0.3s all ease-in-out !important;
+	border:#5c64c6 !important; 
 }
 
 .btn-down-edit:hover
 {
 	background-color:#ffffff !important;
 	color: #5c64c6!important;
+	border:#5c64c6 !important; 
 }
 
 
@@ -86,6 +88,7 @@ html
 	color: #ffffff !important;
 	border-radius: 50px !important;
 	transition: 0.3s all ease-in-out;
+	border:#5c64c6 !important; 
 
 }
 
@@ -93,6 +96,7 @@ html
 {
 	background-color:#ffffff !important;
 	color: #5c64c6!important;
+	border:#5c64c6 !important; 
 }
 .headerM
 {
