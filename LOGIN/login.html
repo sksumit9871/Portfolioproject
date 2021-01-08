@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title> Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/97e6b7c15c.js	" crossorigin="anonymous" ></script>
+</head>
+<body style="background-image: url('yellow.jpg'); background-position: center; background-attachment: fixed">
+	<nav class="navbar navbar-expand-lg navbar-light"style="background-image: url('yellow.jpg'); background-position: center; background-attachment: fixed">
+  <a class="navbar-brand" href="#">
+		<img src="https://www.phptpoint.com/images/1569325888.jpg" alt="404 error" style="width: 80px; height: 70px; ">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ml-2">
+		<a href="index.html" class="btn btn-primary mr-2" style="margin:1rem !important;"> Home</a> 
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> About Us</a>
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> Gallery</a>  
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> Tutorial</a>    
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> Projects</a>  
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="file:///E:/Bootstrap/login.html" class="btn btn-primary mr-2" style="margin:1rem !important;"> Login</a>
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="file:///E:/Bootstrap/registrtionform2.html" class="btn btn-danger mr-2" style="margin:1rem !important;"> Register</a>
+      </li>
+
+	  <li class="nav-item">
+		<a href="file:///E:/Bootstrap/inquiryform.html" class="btn btn-dark " style="margin:1rem !important;"> Inquiry </a>	
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+<center>
+	<div>
+<h1 class="text-white display-3 text-center text-dark"> <span class="badge text-white bg-dark"> <strong> Login </strong> <span class="badge mb-2 badge-primary"> Page </span> </span> </h1>
+</div>
+
+
+<form class="container shadow p-3 mb-0 white rounded">
+<div class=" form-group col-sm-3">
+	<label> <strong>Username </strong></label>
+	<div class="input-group">
+		<div class="input-group-prepend"> 
+		<span class="input-group-text fas fa-user"></span>	
+		</div>
+
+	<input type="text" class="form-control " onblur="chkBlnk()" id="fn" onkeypress="return chkAlph()" placeholder="Username">
+</div>
+	<small id="err" class="text-white" ></small>
+	<small  class="text-white" > </small>
+
+
+</div>
+
+<div class=" form-group col-sm-3">
+	<label><strong> Password </strong> </label>
+	<div class="input-group">
+		<div class="input-group-prepend">
+		<span class="input-group-text fas fa-lock"></span>	
+		</div>
+
+	<input type="Password" class="form-control" onblur="chkBlnk()" id="nn" onkeypress="return chkAlph1()" placeholder="Password">
+</div>
+	<small id="err1" class="text-white" ></small>
+
+</div>
+
+
+<div class="form-group">
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox">
+		<label> I accept terms and Conditions
+		</label>
+		<div class="invalid-feedback"> You Must agree before sign in
+		</div>
+		</div>
+		</div>
+
+<div class="form-group">
+	<input type="submit" class="btn btn-primary" value="Sign In">
+</div>
+<div class="form-group">
+	<label> Forgot Your Password</label>
+	</div>
+
+
+</form>
+</center> 
+
+<footer class="footer text-center bg-dark text-white p-3">
+<p class="mb-0" style="font-size:24px"> <strong> Login Page </strong></p>
+<footer class="text-white"> Copyright © All Rights Reserved | Developed by Sumit Kumar. </footer>
+<footer class="blockquote-footer text-info"> Designed by Sumit Kumar </footer>
+</footer>
+
+<script>
+		function chkBlnk()
+		{
+			var fn=document.getElementById("fn").value;
+
+			if(fn=="")
+			{
+				document.getElementById("err").innerHTML="Enter your Username";
+			}
+
+			else if(fn.length<6)
+			{
+				document.getElementById("err").innerHTML="Must be a-z, A-Z, @#%&! characters Long.";
+			}
+
+			else 
+			{
+				document.getElementById("err").innerHTML="Correct";
+			}
+
+			var nn=document.getElementById("nn").value;
+
+			if (nn=="")
+			{
+				document.getElementById("err1").innerHTML="Enter Your Password";
+			}
+
+			else if(nn.length<10)
+			{
+				document.getElementById("err1").innerHTML="Must be 8-20 characters Long.";
+			}
+		
+
+			else 
+			{
+				document.getElementById("err").innerHTML="Correct";
+			}
+		}
+
+		function chkAlph(Event)
+		{
+			if(!((event.which>=65 && event.which<=90) ||(event.which>=97 && event.which<=122) ))
+
+			{
+				document.getElementById("err").innerHTML="In form a-z, A-Z, @#%&!";
+				return false;
+			}
+
+			else
+			{
+				document.getElementById("err").innerHTML="";
+				return true;
+			}
+		}
+	function chkAlph1(Event)
+		{
+			if(!((event.which>=48 && event.which<=57) ))
+
+			{
+				document.getElementById("err1").innerHTML="In form 0-9, @#%&!";
+				return false;
+			}
+
+			else
+			{
+				document.getElementById("err1").innerHTML="";
+				return true;
+			}
+		}
+
+		
+	</script>
+</body>
+</html>  

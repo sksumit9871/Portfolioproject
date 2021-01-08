@@ -1,0 +1,111 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url('background1.jpg');
+	background-repeat: no-repeat;
+}
+
+header, footer
+{
+	background-color: black;
+	height: 85px;
+	color: #fff;
+
+}
+
+.regisbox
+{
+	top:84%;
+	left:50%;
+	background-color: #000;
+	color:#fff;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	width: 900px;
+	height: auto;
+	position: absolute;
+	border-radius: 5px;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+
+.note
+{
+	top: -50px;
+	left: calc(50% - 50px);
+	position: absolute;
+	padding: 10px;
+}
+
+.button
+{
+	width: 50%;
+}
+
+h2
+{
+	margin: 0 0 0 0px;
+	padding: 60px 0 20px;
+	border-bottom: 2px groove red;
+	 
+}
+
+.regisbox p
+{
+	font-size: 25px;
+	text-align: center;
+}
+
+.regisbox, input
+{	width: 50%;
+	text-align: center;
+	outline: none;
+}
+
+ input[type="text"], input[type="Password"], input[type="email"]
+{
+	border:none;
+	background:transparent;
+	color:#fff;
+	border-bottom: 1px groove gray;
+}
+
+
+
+.color
+{
+	margin-top: -65px;
+}
+.logo
+{
+	width: 160px;
+	height: 50px;
+	margin-left: 25px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+.Condition
+{
+	font-size:12px !important;
+	font-weight:10;
+	letter-spacing: 4px;
+
+}
+
+.last ,a
+{
+	font-size: 15px;
+	letter-spacing:2px;
+	font-weight: 100; 
+}
+
+
+.terms-condition{
+	width: 9%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 16%;
+}

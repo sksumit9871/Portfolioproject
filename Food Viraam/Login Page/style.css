@@ -1,0 +1,95 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background-image: url('back.jpg');
+}
+
+.loginpage
+{
+	width: 350px;
+	height: 430px;
+	background: #000;
+	border-radius: 5px;
+	opacity: 0.95;
+	filter: alpha(opacity=95);
+	color:#fff;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 80px 60px;
+}
+
+.user
+{
+width:150px;
+height: 100px;
+top:-50px;
+left: calc(60% -  110px);
+position: absolute;
+}
+
+h1
+{
+	margin: 0;
+	padding: 0 0 10px;
+	border-bottom:2px groove red;
+
+}
+
+.loginpage p
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.loginpage input
+{
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+ input[type="password"], input[type="text"] 
+{
+	border:none;
+	background: transparent;
+	outline: none;
+	color:#fff;
+	border-bottom: 1px groove gray;
+}
+
+.button
+{
+	width: 100%;
+}
+
+ .none
+{
+	text-decoration:none;
+	color:darkgray;
+}
+
+a, .none:hover
+{
+ color:red;
+}
+
+header
+{
+	background-color: black;
+	height: 85px;
+
+}
+
+.logo
+{
+	width: 160px;
+	height: 50px;
+	margin-left: 25px;
+	margin-top: 15px;
+	border-radius: 5px;
+}

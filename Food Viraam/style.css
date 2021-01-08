@@ -1,0 +1,133 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+} 	
+.logo
+{
+	width: 160px;
+	height: 50px;
+	border-radius: 3px;
+	border:1px groove red;
+}
+
+.space
+{
+	letter-spacing: 1px;
+}
+
+.margin
+{
+	margin:0 0 0 160px;
+
+}
+
+.zomato
+{
+	width: 230px;
+	height: 210px;
+	margin-top: 80px;
+}
+
+.new
+{
+	width: 12%;
+	height: 38px;
+}
+
+input[type="text"]
+{
+	width: 50%;
+	height: 39px;
+	outline: none;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 100;
+
+}
+
+p
+{
+	font-size: 35px;
+	font-weight:10;
+	color:white;
+	letter-spacing:3px; 
+}
+
+.color
+{
+	color:black;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+.color,input
+{
+	width: 100% !important;
+	outline: none;
+	border:0;
+}
+
+.section
+{
+	border-bottom: 1px groove gray;
+}
+
+.border
+{
+	border:1px solid black;
+	height: 200px;
+	text-align:center;
+	padding:15px 0 0 0;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px)
+{
+	.margins
+	{
+		margin-left:160px;
+	}
+
+	.color
+	{
+
+	}
+}
+
+@media screen and (max-width:600px)
+{
+	.margins
+	{
+		margin-left: 120px
+	}
+
+	.color, input
+	{
+		width: 90% !important;
+	}
+
+	.map
+	{
+		margin: 0 0 10px 25px;
+	}
+
+	.inquiry
+	{
+		margin: 0 0 10px 15px;
+	}
+
+	.new
+{
+	width: 20%;
+	height: 38px;
+}
+}
+

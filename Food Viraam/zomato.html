@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zomato Home Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/97e6b7c15c.js" crossorigin="anonymous" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!--------------- Nav Bar --------------------->
+	<header>
+		<nav class="navbar navbar-expand-lg text-light navbar-dark bg-dark" style="background: transparent;">
+  <a href="#"><img src="images/Zomatolog.png"class="logo mr-4" alt="404 error"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav space">
+      <li class="nav-item">
+        <a class="nav-link btn-group btn-outline-primary mr-2 margin" href="E:\Bootstrap\Food Viraam\zomato.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-group btn-outline-primary mr-2" href="#Service" >Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn-group btn-outline-primary mr-2" href="#contact">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-danger mr-2 margin" href="E:\Bootstrap\Food Viraam\Login Page\login page.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-success mr-2" href="E:\Bootstrap\Food Viraam\Registration Page\registrationform.html">Register</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav justify-content-end"></ul>
+  </div>
+</nav>
+
+	<div class="container-fluid back">
+		<div class="row" style="background-image: url('back.jpg');background-position: center; height: 560px;background-attachment: fixed; background-size: cover;">
+			<div class="col col-lg-12">
+				<center> <img src="images/Zomato.png" alt="404 error" class="zomato"> <br>
+				<input type="text" placeholder="Search for Resturant or meals............." name=""> <button class="btn btn-danger new" value="submit" type="submit">Search</button> <br> <p>Find the Best Food Meals.</p></center>						
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<!------------------- Service Section------------------>
+	<div class="container-fluid" id="Service" style=" background-image: url('images/w2.jpg');background-position: center;background-repeat:repeat; background-attachment: fixed;background-size: cover;">
+			<div class="row">
+			<div class="col-lg-12"> 
+				<h1 class="display-3 section"><center> <span class="badge bg-primary text-light mb-2">Service </span></center> </h1>
+			</div>
+		</div>
+		<div class="row mt-2 ml-5">
+			<p class="text-dark ml-5" style="">Delivery</p>
+			<p class="text-dark ml-5" style="">Lunch</p>
+			<p class="text-dark ml-5" style="">Dinner</p>
+			<p class="text-dark ml-5" style="">Cafes</p>
+			<p class="text-dark ml-5" style="">Drinks</p>
+			<p class="text-dark ml-5" style="">Breakfast</p>
+		</div>		
+	</div>
+		
+	
+
+
+<!---------------- Contact Section --------------->
+		<div class="container-fluid" id="contact" style=" background-image: url('images/w2.jpg');background-position: center;background-repeat:repeat; background-attachment: fixed;">
+		<div class="row">
+			<div class="col-lg-12">	
+				<h1 class="display-3 text-center section"> <span class="badge bg-danger text-light mb-2"> Contact </span> </h1>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 map">
+					<h5 class="text-center">Location of Head Office</h5>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.025898103038!2d77.2223539!3d28.6289859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbe59d5d7063%3A0x34307bceb75fc2e1!2sFoodViraam!5e0!3m2!1sen!2sin!4v1580099993773!5m2!1sen!2sin" width="90%" height="90%" frameborder="0" style="border-radius:5px;" ></iframe>
+				</div>
+			<div class="col-lg-4 col-md-4">
+				<h5 class="text-center"> Inquiry Form </h5>
+				<p class="color text-center">Enter Your Name <input type="text" placeholder="Enter Your Name" name=""> </p>
+				<p class="color text-center">Enter Your Email ID <input type="text" placeholder="Enter Your Email" name=""></p>
+				<p class="color text-center">Enter Your Mobile No.<input type="text" placeholder="Enter Your Mobile No." name=""></p>
+				<p class="color text-center">Message</p>
+				 <textarea cols="30" rows="7" placeholder="Type your Message for any inquiry"></textarea>
+			</div>	
+			
+				
+			</div>
+		</div>
+	</div>	
+
+<!------------------------ Footer----------------------> 
+<footer>
+	<div class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col col-lg-12">
+				<img src="images/Zomato.png" width="100px" height="100px"> <hr class="bg-light">
+<footer class="text-white"> Copyright &copy; All Rights Reserved | Developed by Sumit Kumar. </footer>
+<footer class="blockquote-footer text-info"> Designed by Sumit Kumar </footer>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

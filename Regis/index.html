@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title> Bootstrap Registration Form</title>
+ 	<link rel="stylesheet" type="text/css" href="css/Bootstrap.min.css">
+ 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    @media screen and (max-width: 546px)
+  {
+    .resize
+    {
+      font-size:50px; 
+    }
+  }
+
+  @media screen and (max-width: 484px)
+  {
+    .resize
+    {
+      font-size:40px; 
+    }
+  }
+
+  @media screen and (max-width: 400px)
+  {
+    .resize
+    {
+      font-size:35px; 
+    }
+  }
+  </style>
+</head>
+<body style="background-image: url('color.jpg'); background-repeat: no-repeat; background-attachment:fixed; ">
+
+	<nav class="navbar navbar-expand-lg navbar-light"style="background-image: url('color.jpg'); background-position: center; background-attachment: fixed">
+  <a class="navbar-brand" href="#">
+		<img src="https://www.phptpoint.com/images/1569325888.jpg" alt="404 error" style="width: 80px; height: 70px; ">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ml-2">
+		<a href="index.html" class="btn btn-primary mr-2" style="margin:1rem !important;"> Home</a> 
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> About Us</a>
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> Gallery</a>  
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="#" class="btn btn-primary mr-2" style="margin:1rem !important;"> Tutorial</a>    
+      </li>
+
+      <li class="nav-item ml-2" style="margin:1rem !important;">
+		<a href="#" class="btn btn-primary mr-2"> Projects</a>  
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="file:///E:/Bootstrap/login.html" class="btn btn-primary mr-2" style="margin:1rem !important;"> Login</a>
+      </li>
+
+      <li class="nav-item ml-2">
+		<a href="file:///E:/Bootstrap/registrtionform2.html" class="btn btn-danger mr-2" style="margin:1rem !important;"> Register</a>
+      </li>
+
+	  <li class="nav-item">
+		<a href="file:///E:/Bootstrap/inquiryform.html" class="btn btn-dark " style="margin:1rem !important;"> Inquiry </a>	
+      </li>
+
+    </ul>
+  </div>
+</nav> 
+
+<h2 class="display-4 py-4 text-center resize">  <span class="badge badge-secondary mb-3"> <strong> Registration Form </strong>  <span class="badge badge-primary mb-1 "> Page </span> </span> </h2>
+
+<form class="container">
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label> <strong> Enter Your First Name &emsp;: &nbsp; </strong> </label>
+<input type="text" placeholder="First Name" class="form-control"> </div>
+
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label> <strong> Enter Your Last Name &emsp;: &nbsp; </strong> </label>
+<input type="text" placeholder="Last Name" class="form-control"> </div>
+
+<div class="form-group shadow p-3 mb-0 white rounded">	
+<label> <strong> Enter Your Website URL&emsp;: &nbsp; </strong> </label>
+<input type="URl" placeholder="Enter Website URL" class="form-control">	
+</div>
+
+
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label> <strong> Enter Your Email &emsp;: &nbsp; </strong> </label>
+<input type="email" placeholder="Enter Your Email" class="form-control">
+</div>
+
+
+
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label> <strong> Enter Your Mobile Number &emsp;: &nbsp; </strong> </label>
+<input type="text" placeholder="number" class="form-control">
+</div>
+
+
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label> <strong> Enter Your Text to search &emsp;: &nbsp; </strong> </label>
+<input type="email" placeholder="Enter Your Text to search" class="form-control">
+</div>
+
+
+<div class="form-group shadow p-3 mb-0 white rounded ">
+<label> <strong>Address &emsp;: &nbsp; </strong> </label>
+<textarea class="form-control shadow p-3 mb-0 white rounded" rows="7"> </textarea>
+</div>
+
+<div class="custom-file shadow p-3 mb-0 white rounded">
+<input type="file" class="custom-file-input" id="validatedcustomfile" required> 
+<label class="custom-file-label" for="validatedcustomfile"> Upload Your Profile...... </label>
+
+</div>
+
+<div class="form-group shadow p-3 mb-0 white-rounded">
+<label> <strong> Select Your Gender &emsp;: &nbsp;</strong> </label>
+<input type="radio" checked="checked" name="Gen">Male
+<input type="radio" checked="checked" name="Gen">Female
+</div>
+
+
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label class="my-1 mr-2"> <strong> Select Your Country &emsp;: &nbsp; </strong> </label>
+<select class="custom-select my-1 mr-sm-2 shadow p-3 mb-0 white rounded" id="inlinecustomSelect"> 
+<option selected> Choose.....</option>
+<option value="1">India </option>
+<option value="2">USA</option>
+<option value="3">China</option>
+<option value="4">Russia</option>
+<option value="5">Dubai</option>
+</select>
+</div>
+
+<div class="form-group shadow p-3 mb-0 white rounded">
+<label> <strong> Select Your DOB</strong> </label>
+<input type="date" class="form-control">
+</div>
+
+<center>
+<div class="form-group shadow p-3 mb-0 white rounded">
+<input class="btn btn-primary btn-block" type="submit" value="Save Data"> 
+<input class="btn btn-danger btn-block" type="submit" value="Reset Data"> 
+
+</div>
+</center>
+</form>
+
+
+<blockquote class="blockquote text-right bg-dark text-white"> 
+<center>
+<p class="mb-0"> <strong> Regsitration Form </strong> </p>
+<footer class="text-white"> Copyright © All Rights Reserved | Developed by Sumit Kumar. </footer>
+<footer class="blockquote-footer text-primary"> Designed by Sumit Kumar </footer>
+</center>
+</blockquote>
+
+
+</body>
+</html>
